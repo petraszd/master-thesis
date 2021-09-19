@@ -1,0 +1,80 @@
+\documentclass{mifcs2}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{url}
+
+% Xetex
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+
+% Xetex end
+
+% Latex
+
+%\usepackage{times}
+%\usepackage[utf8x]{inputenc}
+%\usepackage{ae,aecompl}
+
+% Latex end
+
+
+% PDF related options
+\usepackage[
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdftitle={Vokseliais paremtas vizualizavimas},
+  pdfauthor={Petras Zdanavičius},
+  pdfcreator={XeTeX with hyperref package},
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+]{hyperref}
+
+
+\title{Vokseliais paremtas vizualizavimas}
+\author{Petras Zdanavičius}
+\date{Vilnius\\2010}
+
+\def\mentor{lek. Saulius Narkevičius}
+\def\doctype{Baigiamasis magistro darbas}
+\def\studentstatus{2 kurso, 10 grupės studentas}
+\def\signature{parašas}
+
+% Translate
+\def\figurename{Pav.}
+\def\tablename{Lentelė.}
+\def\literature{Literatūros sąrašas}
+\renewcommand*{\refname}{\literature}
+
+\begin{document}
+
+% Do not ask about "fancy" and "empty" things...
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\thispagestyle{fancy}
+
+\input{sections/anotacija}
+\input{sections/summary}
+\input{sections/ivadas}
+\input{sections/susije-darbai}
+\input{sections/placiau-apie-vokselius}
+\input{sections/turiniu-ir-poligoniniu-objektu-palyginimas}
+\input{sections/kompiuteriniai-zaidimai-ir-vokseliai}
+\input{sections/vokseliu-vizualizavimas}
+\input{sections/mano-sukurtas-irankis}
+\input{sections/veikimas}
+\input{sections/rezultatai}
+\input{sections/isvados}
+\clearpage
+\input{sections/literatura}
+
+\end{document}
+

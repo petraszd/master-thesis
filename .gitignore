@@ -1,0 +1,11 @@
+Session.vim
+*.aux
+*.log
+*.lot
+*.toc
+*.out
+*.lof
+*.toc
+master.pdf
+*.swp
+

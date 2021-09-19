@@ -1,0 +1,28 @@
+\section{Susiję darbai}
+\label{sec:susije_darbai}
+
+Apie spindulių skleidimo idėjos pritaikymą tūriniams objektams vizualizuoti,
+naudojant vokselius, kalbama jau 1988 m. Marc Levoy straipsnyje
+„\textit{Display Of Surfaces from Volume Data}“ \cite{first}.
+
+Jens Krüger ir Rüdiger Westermann 2003m. publikuotame „\textit{Acceleration
+Techniques for GPU-based Volume Rendering}“ \cite{raycast} spindulių skleidimas
+įgyvendinamas panaudojant spalvotų vienetinių kubų idėją, kuria aš daugiausiai
+ir rėmiausi, kurdamas savo įrankį.
+
+Dabartiniai darbai, naudojantys tūrinį spindulių skleidimą, daugiausia dėmesio
+skiria tūrinių scenų su masiniu vokselių skaičiumi vizualizavimui. Tai Cyril
+Crassin ir kiti autoriai su savo veikalais „\textit{Interactive GigaVoxels}“
+\cite{gig2008} ir „\textit{GigaVoxels : Ray-Guided Streaming for Efficient and
+Detailed Voxel Rendering}“ \cite{gig2009}. Juose pristatomas tūrinio skleidimo
+algoritmas. Tačiau dėl to, kad jie bando dirbti su dideliu kiekiu duomenų --
+jie privalo daryti tam tikras prielaidas (pvz.: kad dauguma objektų visiškai
+nepermatomi).
+
+Enrico Gobbetti ir kiti autoriai taip pat panaudojo spindulių skleidimą
+masiniam vokselių vizualizavimui darbe „\textit{A single-pass GPU ray casting
+framework for interactive out-of-core rendering of massive volumetric
+datasets}“ \cite{other}. Kitaip nei prieš tai aptartų darbų autoriai, šie
+visiškai atsisako dalinio permatomumo, tačiau dėl to leidžia sau naudotis
+agresyvia vokselių blokelių atmetimo technika.
+
